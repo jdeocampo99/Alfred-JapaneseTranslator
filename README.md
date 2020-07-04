@@ -36,6 +36,8 @@ This wouldn't be possible with out [Alfred](https://www.alfredapp.com). Quite po
 
 Thank you to [Jisho.org](https://jisho.org) for their huge dictionary of words and their API which made searching queries much faster. 
 
+Thanks to [Beautiful Soup 4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) for offering such a great tool for web scraping.
+
 This workflow uses the [Alfred-Workflow](https://github.com/deanishe/alfred-workflow) library, licensed under The MIT License.
 
 Inspired by [Jisho-Alfred](https://github.com/janclarin/jisho-alfred) which is a really good workflow that uses the same Jisho API to do essentially the same thing,
