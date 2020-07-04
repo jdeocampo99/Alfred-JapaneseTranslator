@@ -10,6 +10,11 @@ Web Scraping via Beautiful Soup 4 using Reverso.net's verb conjugation portion o
 This app was made using Python2 and requires Alfred, a powerful productivity app which boosts your efficiency with hotkeys, keywords, text expansion and more.
 
 ## **[DOWNLOAD](https://github.com/JustinDeOcampo/Alfred-JapaneseTranslator/releases/download/v1.0.0/Japanese-Translator.alfredworkflow)**
+
+## DEMO
+
+![jpv demo](https://media.giphy.com/media/jslTiSzo3k129SiAdL/giphy.gif)
+![jpc demo](https://media.giphy.com/media/YSwEfXD7Y7JuWCYSYE/giphy.gif)
 ## Commands:
 - `jpv` -> "Japanese Vocabulary". Type in any english or japanese word to receive Japanese definitions.
 
