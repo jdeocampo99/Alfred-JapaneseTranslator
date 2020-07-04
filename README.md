@@ -7,7 +7,7 @@ Sentence translation is performed through Alfred's built in system where the use
 look-ups were made possible by Jisho.org's API and allows for quick and easy viewing of definitions within Alfred. Verb conjugations were implemented through 
 Web Scraping via Beautiful Soup 4 using Reverso.net's verb conjugation portion of their website.
 
-This app was made using Python2 and requires Alfred, a powerful productivity app which boosts your efficiency with hotkeys, keywords, text expansion and more.
+This app was made using Python2 and is currently test on and works for Alfred 4.
 
 ## **[DOWNLOAD](https://github.com/JustinDeOcampo/Alfred-JapaneseTranslator/releases/download/v1.0.0/Japanese-Translator.alfredworkflow)**
 
