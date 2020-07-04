@@ -11,6 +11,9 @@ from workflow import Workflow3, web
 API_URL = 'http://jisho.org/api/v1/search/words'
 
 
+__version__ = '1.0.0'
+
+
 def fetch_results(query):
     """Fetches query search results from Jisho.org API.
     Args:
@@ -93,6 +96,9 @@ def main(wf):
     else:
         None
 
+    if wf.update_available:
+        wf.add_item('A newer version of Japanese Translator Workflow is available. \
+        Please hit enter to download and install the new version.', autocomplete='workflow:update')
     try:
         # if user types input, fetch the API page for that word
         if len(query):
@@ -118,7 +124,14 @@ def main(wf):
 
 if __name__ == '__main__':
     # Create a global `Workflow3` object
-    wf = Workflow3()
+    wf = Workflow3(update_settings={
+        'github_slug': 'justindeocampo/Alfred-JapaneseTranslator',
+        'version': __version__,
+        'frequency': 7
+    })
+
+    if wf.update_available:
+        wf.start_update()
     # Call your entry function via `Workflow3.run()` to enable its
     # helper functions, like exception catching, ARGV normalization,
     # magic arguments etc.

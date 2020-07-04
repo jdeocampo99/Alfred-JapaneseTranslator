@@ -7,6 +7,8 @@ import sys
 # is also compatible with Alfred 2.
 from workflow import Workflow3, web
 
+__version__ = '1.0.0'
+
 TENSES = [u'Present', u'Negative Present', u'Past', u'Negative Past', u'-te Form', u'Volitional', u'Potential', u'Negative Potential',
           u'Passive', u'Negative Passive', u'Causative', u'Negative Causative', u'Imperative', u'Negative Imperative',
           u'Conditional', u'Conditional (-tara）']
@@ -99,6 +101,10 @@ def main(wf):
     # clean up string for query
     query = clean_string(raw_query)
 
+    if wf.update_available:
+        wf.add_item('A newer version of Japanese Translator Workflow is available. \
+        Please hit enter to download and install the new version.', autocomplete='workflow:update')
+
     try:
         # Calling webscraper
         reverso_soup = fetch_data(query)
@@ -115,7 +121,11 @@ def main(wf):
 
 if __name__ == '__main__':
     # Create a global `Workflow3` object
-    wf = Workflow3(libraries=['./lib'])
+    wf = Workflow3(libraries=['./lib'], update_settings={
+        'github_slug': 'justindeocampo/Alfred-JapaneseTranslator',
+        'version': __version__,
+        'frequency': 14
+    })
     # Call your entry function via `Workflow3.run()` to enable its
     # helper functions, like exception catching, ARGV normalization,
     # magic arguments etc.

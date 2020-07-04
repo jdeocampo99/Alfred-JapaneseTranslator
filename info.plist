@@ -68,7 +68,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Japanese Translator</string>
+	<string>Japanese-Translator</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -291,7 +291,32 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string># Alfred-JapaneseTranslator
+
+This is an Alfred workflow which translates between English and Japanese, has in-depth vocabulary lookups, and generates verb conjugations for a given verb.
+
+## Commands:
+- `jpv` -&gt; "Japanese Vocabulary". Type in any english or japanese word to receive Japanese definitions.
+
+- `jpc` -&gt; "Japanese Conjugation". Type in any verb in Japanese and it will return a list of the possible conjugations.
+  
+  NOTE: `jpc` does not handle plugging in english verbs. Only Japanese verbs, though you can type them using the english alphabet or using kana.
+  
+- `jte` -&gt; "Japanese to English". Type in any sentence in Japanese in order to filter your query through google translate.
+
+- `etj` -&gt; English to Japanese". Type in any english sentence to filter your query through google translate.
+
+- `Enter` -&gt; You can press the enter key on any query you make to be redirected to either Jisho.org, Reverso.net, or translate.google.com.
+
+## Credit:
+This wouldn't be possible with out [Alfred]. Quite possibly one of my favorite productivity apps on mac.
+
+Thank you to [Jisho.org] for their huge dictionary of words and their API which made searching queries much faster. 
+
+This workflow uses the [Alfred-Workflow] library, licensed under The MIT License.
+
+Inspired by [Jisho-Alfred] which is a really good workflow that uses the same Jisho API to do essentially the same thing,
+I just wanted to add the extra functionality described above.</string>
 	<key>uidata</key>
 	<dict>
 		<key>0E43E233-DA65-448F-8301-A1BCAC6AA0C2</key>
@@ -303,55 +328,67 @@
 		</dict>
 		<key>15F1630F-8325-4BF6-A0A4-E77A58FB4C1F</key>
 		<dict>
+			<key>note</key>
+			<string>Japanese Vocabulary Translator</string>
 			<key>xpos</key>
 			<integer>105</integer>
 			<key>ypos</key>
-			<integer>70</integer>
+			<integer>55</integer>
 		</dict>
 		<key>3549FAEC-2C79-4ECF-9F3A-D7577A6DA454</key>
 		<dict>
 			<key>xpos</key>
 			<integer>450</integer>
 			<key>ypos</key>
-			<integer>455</integer>
+			<integer>510</integer>
 		</dict>
 		<key>541A85BE-CE74-428C-94B2-8426CE38A4EF</key>
 		<dict>
+			<key>note</key>
+			<string>Japanese Conjugator</string>
 			<key>xpos</key>
 			<integer>110</integer>
 			<key>ypos</key>
-			<integer>455</integer>
+			<integer>510</integer>
 		</dict>
 		<key>58923CAD-C90D-4887-81F0-0CE90F0A69E0</key>
 		<dict>
 			<key>xpos</key>
 			<integer>455</integer>
 			<key>ypos</key>
-			<integer>70</integer>
+			<integer>55</integer>
 		</dict>
 		<key>7E4144D7-4329-4386-B804-C49195F2FE97</key>
 		<dict>
 			<key>xpos</key>
 			<integer>455</integer>
 			<key>ypos</key>
-			<integer>330</integer>
+			<integer>355</integer>
 		</dict>
 		<key>E5F35AC3-5A38-4183-BD98-6AAA6AA2ACCB</key>
 		<dict>
+			<key>note</key>
+			<string>Japanese-&gt; English Sentence Translator</string>
 			<key>xpos</key>
 			<integer>105</integer>
 			<key>ypos</key>
-			<integer>195</integer>
+			<integer>200</integer>
 		</dict>
 		<key>EF9AF61D-5714-4CB3-A252-89B6EC5BE424</key>
 		<dict>
+			<key>note</key>
+			<string>English-&gt; Japanese Sentence Translator</string>
 			<key>xpos</key>
-			<integer>110</integer>
+			<integer>105</integer>
 			<key>ypos</key>
-			<integer>330</integer>
+			<integer>355</integer>
 		</dict>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>1.0.0</string>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/JustinDeOcampo/Alfred-JapaneseTranslator</string>
 </dict>
 </plist>
