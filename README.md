@@ -15,6 +15,7 @@ This app was made using Python2 and requires Alfred, a powerful productivity app
 
 ![jpv demo](https://media.giphy.com/media/jslTiSzo3k129SiAdL/giphy.gif)
 ![jpc demo](https://media.giphy.com/media/YSwEfXD7Y7JuWCYSYE/giphy.gif)
+![jte demo](https://media.giphy.com/media/iIYp2v1eESRX9pVzAq/giphy.gif)
 ## Commands:
 - `jpv` -> "Japanese Vocabulary". Type in any english or japanese word to receive Japanese definitions.
 
